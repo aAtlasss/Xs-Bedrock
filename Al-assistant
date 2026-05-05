@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Assistant | Xs Panel</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #0b0f1a;
+            color: white;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+        .ai-container {
+            width: 100%;
+            max-width: 500px;
+            background: #1c222d;
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            border: 1px solid #334155;
+        }
+        .back-link { color: #3b82f6; text-decoration: none; font-size: 14px; display: block; margin-bottom: 20px; }
+        .ai-title { font-size: 24px; font-weight: bold; margin-bottom: 15px; }
+        .ai-description { color: #94a3b8; line-height: 1.6; margin-bottom: 25px; }
+        .chat-window {
+            background: #0f172a;
+            height: 300px;
+            border-radius: 12px;
+            padding: 15px;
+            overflow-y: auto;
+            text-align: left;
+            border: 1px solid #1e293b;
+        }
+        .input-area { display: flex; gap: 10px; margin-top: 15px; }
+        input {
+            flex: 1; background: #1e293b; border: 1px solid #334155;
+            color: white; padding: 12px; border-radius: 8px;
+        }
+        button { background: #3b82f6; border: none; color: white; padding: 10px 20px; border-radius: 8px; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+<div class="ai-container">
+    <a href="index.html" class="back-link">← Повернутися до панелі</a>
+    
+    <div class="ai-title">AI-асистент сервера</div>
+    <p class="ai-description">
+        Отримайте AI-помічника, який може керувати вашим сервером, діагностувати проблеми та виконувати команди через природне спілкування.
+    </p>
+
+    <div class="chat-window" id="chat">
+        <div style="color: #3b82f6;">🤖 Бот: Я готовий до роботи. Що хочете дізнатися про сервер?</div>
+    </div>
+
+    <div class="input-area">
+        <input type="text" id="user-input" placeholder="Напишіть команду...">
+        <button onclick="askAI()">➜</button>
+    </div>
+</div>
+
+<script>
+    function askAI() {
+        const input = document.getElementById('user-input');
+        const chat = document.getElementById('chat');
+        if(!input.value) return;
+
+        chat.innerHTML += `<div><b>Ви:</b> ${input.value}</div>`;
+        
+        // Відповідь бота
+        setTimeout(() => {
+            chat.innerHTML += `<div style="color: #3b82f6;">🤖 Бот: Аналізую стан сервера... Все працює в межах норми.</div>`;
+            chat.scrollTop = chat.scrollHeight;
+        }, 1000);
+        
+        input.value = "";
+    }
+</script>
+
+</body>
+</html>
+<div class="ai-section">
+    <div class="ai-title">AI-асистент сервера</div>
+    <button class="ai-btn" onclick="window.location.href='ai.html'">
+        <span>🤖</span> <span>ШІ-керування сервером</span>
+    </button>
+</div>
+https://img.shields.io/badge/AI_Assistant-Powered-blue?style=for-the-badge&logo=openai&logoColor=whitehttps://img.shields.io/badge/ВІДКРИТИ_AI_ПАНЕЛЬ-ЗАПУСК-3b82f6?style=for-the-badge&logo=robot&logoColor=white### 🤖 Інтелектуальне керування
+[![AI Assistant](https://img.shields.io/badge/AI_Assistant-Powered-blue?style=for-the-badge&logo=openai&logoColor=white)](https://YOUR_USERNAME.github.io/Xs-Bedrock/)
+
+*(Натисніть на кнопку вище, щоб відкрити ШІ-помічника у браузері)*
+https://YOUR_USERNAME.github.io/Xs-Bedrock/---
+
+## 🚀 Функції майбутнього
+<a href="https://YOUR_USERNAME.github.io/Xs-Bedrock/">
+  <img src="https://img.shields.io/badge/ВІДКРИТИ_AI_ПАНЕЛЬ-ЗАПУСК-3b82f6?style=for-the-badge&logo=robot&logoColor=white" alt="Open AI Panel">
+</a>
+
+> **Примітка:** AI-асистент дозволяє виконувати команди через природне спілкування.
+
+---
