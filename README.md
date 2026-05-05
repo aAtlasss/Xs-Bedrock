@@ -1,6 +1,6 @@
 #.🚀 Панель Xs | Видання Bedrock
 
----
+--- 
 
 #.Xs Panel | Bedrock Edition
 --- **Minecraft Bedrock**.
