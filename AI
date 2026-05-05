@@ -1,7 +1,0 @@
-<div class="ai-section">
-    <div style="font-weight: bold;" id="ai-title">AI-асистент сервера</div>
-    <div style="font-size: 13px; color: var(--secondary-text); margin: 8px 0;" id="ai-desc">
-        Керуйте сервером через природне спілкування.
-    </div>
-    <button class="ai-btn">🤖 <span id="ai-btn">ШІ-керування сервером</span></button>
-</div>
